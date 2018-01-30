@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nira's Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Nira</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about1">간단소개</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio1">개발경험<br/>- 개인 프로젝트</a>
+        </li>
+		<li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio2">개발경험<br/>- 업무 프로젝트</a>
+        </li>
+		<li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio3">개발경험<br/>- 대학원 프로젝트</a>
+        </li>
+		<li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#work">업무경험</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about2">진짜 소개</a>
+        </li>
+		<li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#link">Link</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">Nira's Portfolio</h1>
+        <h3 class="mb-5">
+          <em>개발의 기록이나 경험을 담아두었습니다.</em>
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about1">우선 소개부터 시작합니다</a>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- About1 -->
+    <section class="content-section bg-light" id="about1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+			<div class="content-section-heading">
+			  <h3 class="text-secondary mb-0">Short Introduction</h3>
+			  <h2 class="mb-5">저의 소개입니다</h2>
+			</div>
+            <h2>하지만 여기선 간단히 하겠습니다</h2>
+			
+			<div class="content-section text-left" style="font-size:120%">
+			<p><span style="font-size:125%; color:white; background-color:black;">이름_</span></p>
+			<p>강태준<br/>닉네임: Nira</p>
+			<p><span style="font-size:125%; color:white; background-color:black;">뭐함?_</span></p>
+			<p>프로그래머입니다</p>
+			<p>Android, Java, Web, 그리고 게임 개발에 조금 흥미가 있습니다.</p>
+			<p>하고 싶은 것들이 잔뜩 있습니다.</p>
+			<p>기회와 시간만 있다면 언제든 새로운 것에 도전하고 싶습니다.</p>
+			<p>Java, Kotlin, HTML, JavaScript, C#등의 경험이 있습니다.</p>
+			</div>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio1">그래서, 지금까지 뭐 해보셨어요?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<!-- Portfolio -->
+    <section class="content-section bg-primary text-white text-center" id="portfolio1">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">지금까지의 프로젝트</h2>
+		  <h4 class="text-center">개인 프로젝트, 업무 프로젝트, 대학원 프로젝트 순으로 나열하겠습니다.</h4>
+        </div>
+		<div class="content-section">
+			<h3 class="text-center">개인 프로젝트</h3>
+			<p class="text-center">각 이미지를 클릭하면 상세한 정보를 볼 수 있습니다</p>
+			<div class="row no-gutters">
+			  <div class="col-lg-6">
+				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(0);">
+				  <span class="caption">
+					<span class="caption-content">
+					  <h2>Ringtone Randomizer<br/>2011~2012 / 2015 Renewal<br/>Android</h2>
+					  <p class="mb-0">착신 상태에 의한 시스템 변화를 체크하여 벨소리를 랜덤하게 바꾸어주는 앱</p>
+					</span>
+				  </span>
+				  <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+				</a>
+			  </div>
+			  <div class="col-lg-6">
+				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(1);">
+				  <span class="caption">
+					<span class="caption-content">
+					  <h2>Drawing Launcher<br/>2016<br/>Android</h2>
+					  <p class="mb-0">터치 & 드로잉으로 앱이나 핸드폰의 기능을 실행하는 런처 앱</p>
+					</span>
+				  </span>
+				  <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+				</a>
+			  </div>
+			  <div class="col-lg-6">
+				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(2);">
+				  <span class="caption">
+					<span class="caption-content">
+					  <h2>GITADORA Info<br/>2016<br/>Web & Android</h2>
+					  <p class="mb-0">음악게임 GITADORA 시리즈의 개인기록과 공식에서 제공하지 않는 기능을 지원하는 웹 서비스</p>
+					</span>
+				  </span>
+				  <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+				</a>
+			  </div>
+			  <div class="col-lg-6">
+				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(3);">
+				  <span class="caption">
+					<span class="caption-content">
+					  <h2>BMS Player(가제)<br/>2017~<br/>Unity3D</h2>
+					  <p class="mb-0">Unity3D 기반의 음악게임</p>
+					</span>
+				  </span>
+				  <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+				</a>
+			  </div>
+			</div>
+			<br/><br/>
+			<a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio2">다음은 업무에서 경험한 것들입니다</a>
+		</div>
+      </div>
+    </section>
+	
+	<!-- Portfolio2 -->
+    <section class="content-section bg-warning text-white text-center" id="portfolio2">
+      <div class="container">
+        <div class="content-section">
+			<h3 class="text-center">업무 프로젝트</h3>
+			<p class="text-center">각 이미지를 클릭하면 상세한 정보를 볼 수 있습니다</p>
+			<div class="row no-gutters">
+			  <div class="col-lg-6">
+				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(4);">
+				  <span class="caption">
+					<span class="caption-content">
+					  <h2>AI 플랫폼<br/>2015/5~2016/8<br/>Java</h2>
+					  <p class="mb-0">대화를 할 수 있는 AI를 만들기 위해 자연언어 처리 프로젝트에 참가</p>
+					</span>
+				  </span>
+				  <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
+				</a>
+			  </div>
+			  <div class="col-lg-6">
+				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(5);">
+				  <span class="caption">
+					<span class="caption-content">
+					  <h2>Unity용의 AI Game과 Unity Plugin의 개발<br/>2016/8~<br/>Unity3D / C#</h2>
+					  <p class="mb-0">사내 AI기술을 이용한 게임과 이를 만들 수 있는 플러그인 개발</p>
+					</span>
+				  </span>
+				  <img class="img-fluid" src="img/portfolio-6.jpg" alt="">
+				</a>
+			  </div>
+			</div>
+			<br/><br/>
+			<a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio3">마지막으로 대학원에서 경험한 것입니다</a>
+		</div>
+      </div>
+    </section>
+	
+	<!-- Portfolio3 -->
+    <section class="content-section bg-primary text-white text-center" id="portfolio3">
+      <div class="container">
+        <div class="content-section">
+			<h3 class="text-center">대학원 프로젝트</h3>
+			<p class="text-center">각 이미지를 클릭하면 상세한 정보를 볼 수 있습니다</p>
+			<div class="row no-gutters">
+			  <div class="col-lg-6">
+				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(6);">
+				  <span class="caption">
+					<span class="caption-content">
+					  <h2>Ontology 기반의 상태인지 모바일 프레임워크<br/>2013~2014<br/>Java 메인</h2>
+					  <p class="mb-0">증명 지원을 위한 Android 앱 제작 및 프레임워크 수정</p>
+					</span>
+				  </span>
+				  <img class="img-fluid" src="img/portfolio-7.jpg" alt="">
+				</a>
+			  </div>
+			  <div class="col-lg-6">
+				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(7);">
+				  <span class="caption">
+					<span class="caption-content">
+					  <h2>Big Data 서비스 조합 프레임워크<br/>2014~2015<br/>PHP & JavaScript</h2>
+					  <p class="mb-0">Big Data의 사용법을 수집, 처리, 표현으로 나누어 서비스들을 합쳐 하나의 시스템으로 만드는 프레임워크</p>
+					</span>
+				  </span>
+				  <img class="img-fluid" src="img/portfolio-8.jpg" alt="">
+				</a>
+			  </div>
+			</div>
+			<br/><br/>
+			<a class="btn btn-light btn-xl js-scroll-trigger" href="#work">어디서 일해보셨어요?</a>
+		</div>
+      </div>
+    </section>
+	
+	<!-- Work -->
+    <section class="content-section bg-light" id="work">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+			<div class="content-section-heading">
+			  <h3 class="text-secondary mb-0">About Previous Job</h3>
+			  <h2 class="mb-5">지금까지의 업무 경험</h2>
+			</div>
+			
+			<div class="content-section text-left" style="font-size:120%">
+			<h3>2015/5~</h3>
+			<p><span style="font-size:125%; color:white; background-color:black;">사명_</span></p>
+			<p>한국전자인증</p>
+			<p><span style="font-size:125%; color:white; background-color:black;">직종_</span></p>
+			<p>보안 / 금융계 시스템 / AI</p>
+			<p><span style="font-size:125%; color:white; background-color:black;">담당_</span></p>
+			<p>R&D / 소프트웨어 개발</p>
+			</div>
+          </div>
+        </div>
+		<a class="btn btn-dark btn-xl js-scroll-trigger" href="#about2">마지막의 소개입니다</a>
+      </div>
+    </section>
+
+    <!-- About2 -->
+    <section class="content-section" id="about2">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+			<div class="content-section-heading">
+			  <h3 class="text-secondary mb-0">Introduction</h3>
+			  <h2 class="mb-5">진짜 자기소개</h2>
+			</div>
+			<div class="content-section text-left" style="font-size:120%">
+			<p><span style="font-size:125%; color:white; background-color:black;">이름_</span></p>
+			<p>강태준<br/>닉네임: Nira</p>
+			<p><span style="font-size:125%; color:white; background-color:black;">생년_</span></p>
+			<p>1991</p>
+			<p><span style="font-size:125%; color:white; background-color:black;">성별_</span></p>
+			<p>남</p>
+			<p><span style="font-size:125%; color:white; background-color:black;">학력_</span></p>
+			<p>부산대학교</p>
+			<p>2013~2015<br/>
+			전기컴퓨터공학부 - 컴퓨터공학과 (석사)<br/>
+			ソフトウェア工学</p>
+			<p>2009~2013<br/>
+			정보컴퓨터공학부 (학사)</p>
+			<p><span style="font-size:125%; color:white; background-color:black;">개발언어_</span></p>
+			<p>Java: Native Java, Spring Framework<br/>
+			Android: Android, Kotlin<br/>
+			Web: HTML, JavaScript<br/>
+			etc: C#(including Unity3D), PHP<br/>
+			소스관리: GitHub, GitLab, BitBucket</p>
+			<p><span style="font-size:125%; color:white; background-color:black;">경험 프로젝트_</span></p>
+			<p>이 페이지의 위를 봐주세요!</p>
+			</div>
+          </div>
+        </div>
+		<a class="btn btn-dark btn-xl js-scroll-trigger" href="#link">감사합니다!</a>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section class="callout" id="link">
+      <div class="container text-center">
+		<h3 class="text-primary mb-0">Links</h3>
+        <h2 class="mx-auto mb-5">링크</h2>
+        <a class="btn btn-primary btn-xl" href="https://arincblossom.wordpress.com/">블로그</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+	  <!--
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="#">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+		-->
+        <p class="text-muted small mb-0">Copyright &copy; Nira 2016-2018</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+	
+	<script>
+	var exp = [
+					// 0번: ringtone randomizer
+					["Ringtone Randomizer [ Android ]",
+					"- 사용언어: Java<br/>"+
+					"- 2011년~2012년 개발, 2015년 리뉴얼<br/>"+
+					"- 13400 다운로드 & 3.85 평점<br/>"+
+					"- 착신 상태에 의한 시스템 변화를 체크하여 벨소리를 랜덤하게 변경<br/>"+
+					"<a href='https://play.google.com/store/apps/details?id=com.ring.roxyeris' style='color:blue'>Google Play Store Link</a>", 3],
+					// 1번: drawing launcher
+					["Drawing Launcher [ Android ]",
+					"- 사용언어: Java/Kotlin (부분적)<br/>"+
+					"- 2016.08~2017.04 개발<br/>"+
+					"- 약 300 다운로드 & 4.6 평점<br/>"+
+					"- 터치&드로잉으로 앱이나 핸드폰의 기능을 실행하는 런처 앱<br/>"+
+					"<a href='https://play.google.com/store/apps/details?id=com.roxyeris.drawinglauncher' style='color:blue'>Google Play Store Link</a>", 3],
+					// 2번: gitadora info
+					["GITADORA Info [ Web & Android ]",
+					"- 팀 규모: 2명→1명<br/>"+
+					"- 사용언어 및 플랫폼: Java/JavaScript/HTML/HTML5/Spring Framework<br/>"+
+					"- 2016년 1월~4월 개발 (웹), Android판 뷰어도 개발됨<br/>"+
+					"- K사의 음악게임인 GITADORA 시리즈의 개인기록과 공식에서 지원하지 않는 정보들을 제공하는 웹 서비스<br/>"+
+					"- 한국과 일본을 포함해 전세계에서 2550명 이상이 등록<br/>"+
+					"<a href='https://gitadora.info' style='color:blue'>Site Link</a>", 4],
+					// 3번: BMS
+					["BMS Player(가제) [ PC & Android ]",
+					"- 사용언어 및 플랫폼: Unity3D/C#<br/>"+
+					"- 2017년 12월~개발중<br/>"+
+					"- 타겟: Windows, Android<br/>"+
+					"- Unity3D 기반의 음악게임<br/>"+
+					"- 포트폴리오용으로 시작하였으나 커뮤니티에서의 반응이 좋아 계속 개발 중<br/>"+
+					"- 샘플 영상: <a href='https://www.youtube.com/watch?v=xR0wSehoCv4' style='color:blue'>Sample Video Link</a>", 2],
+					// 4번: aicore
+					["AI 플랫폼 개발 팀 참가",
+					"[기간] 2015년 5월~2016년 8월<br/>"+
+					"[팀 규모] 5명<br/>"+
+					"[업무내용]<br/>"+
+					"(1) Natural Language Processing/Generation 엔진 개발<br/>"+
+					"- Java/Jena, Stanford NLP<br/>"+
+					"(2) 채팅 봇 개발<br/>"+
+					"- Java, Tomcat 8<br/>"+
+					"- 별도의 서버를 이용하여 회사 홈페이지 내에서 서비스<br/>"+
+					"- 서비스 기간: 약 1년<br/>"+
+					"(3) 에이전트 간 통신<br/>"+
+					"- JADE Framework<br/>"+
+					"- PC와 Android에서 연구 진행<br/>"+
+					"(4) 관련제품<br/>"+
+					"- 가정용 로봇 Tyche（<a href='http://tyche.club/' style='color:blue'>Product Web Page</a>）", 2],
+					// 5번: futurable
+					["Unity 게임 개발 및 Unity용 AI 플러그인 개발",
+					"[기간] 2016년 8월~<br/>"+
+					"[팀 규모] 3명→5명<br/>"+
+					"[업무내용]<br/>"+
+					"(1) Unity 게임 개발<br/>"+
+					"- 사용언어: C#(Client)/Java(Server)<br/>"+
+					"- 회사가 보유한 기술을 사용해 NPC가 게임의 환경을 확인하여 다음 동작을 결정하는 게임의 샘플을 개발<br/>"+
+					"- 사내 개발과 함께 외주의 도움을 받음<br/>"+
+					"- C#로 클라이언트의 일부 개발, Java로 AI를 처리하기 위한 서버 개발 (Spring Framework에서 Python 코드를 실행하는 형태로 Tensorflow 사용)<br/>"+
+					"(2) Unity용 AI플러그인 개발<br/>"+
+					"- 사용언어: C#(Client)/Java(Server)<br/>"+
+					"- 상기 게임에 사용했던 기술을 기반으로 Unity 개발자가 사용할 수 있는 플러그인을 제작<br/>"+
+					"- 동일하게 외주와 협력으로 개발<br/>"+
+					"- C#으로 클라이언트의 일부기능 및 버그 수정을 담당<br/>"+
+					"- Java로 AI처리를 위한 서버 개발 (Spring Framework에서 Python 코드를 실행하는 형태로 Tensorflow 사용)", 2],
+					// 6번: ontology
+					["Ontology 기반의 상태인지 모바일 프레임워크",
+					"- 증명 보조를 위한 Android 앱의 제작 및 프레임워크 수정 등의 작업을 담당<br/>"+
+					"- SCI-E 급 논문의 제 2저자로 참가", 2],
+					// 7번: big data
+					["Big Data 서비스 조합 프레임워크",
+					"- Big Data의 사용법을 수집, 처리, 표현으로 구분하여 서비스들을 조합해 하나의 시스템으로 만드는 프레임워크<br/>"+
+					"- 3명의 팀이 외주로서 참가<br/>"+
+					"- PHP로 프론트엔드의 일부를 담당", 1]
+					];
+	function openExplain(type) {
+		var htmltxt = exp[type][1]+"<br/><br/>참고 이미지 (클릭해서 크게 보기)<br/>";
+		
+		for(var i = 0; i < exp[type][2]; i++) {
+			htmltxt += "<a target='_blank' href='img/"+type+"-"+i+".jpg'><img src='img/"+type+"-"+i+".jpg' style='max-width: 200px' /></a>";
+		}
+		
+		var dlg = $("<div title='"+exp[type][0]+"'></div>").css({"overflow-y":"auto"}).html(htmltxt).dialog({
+			width:800,
+			maxHeight: window.innerHeight - 15,
+			overflow:'scroll',
+			resizable:false
+		});
+	}
+	</script>
+
+  </body>
+
+</html>
