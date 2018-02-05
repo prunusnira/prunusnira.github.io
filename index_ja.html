@@ -360,7 +360,7 @@
 					"- チーム規模：2人→1人<br/>"+
 					"- 使用言語・プラットフォーム：Java/JavaScript/HTML/HTML5/Spring Framework<br/>"+
 					"- 2016年1月~4月開発（ウェブ）Android版ビューアーも開発済み<br/>"+
-					"- K社の音楽ゲームGITADORAシリーズの個人記録や公式から提供しない情報も支援するウェブサービス<br/>"+
+					"- K社の音楽ゲームGITADORAシリーズの個人記録の管理や公式から提供しない情報を見えるようにサポートするウェブサービス<br/>"+
 					"- 日本と韓国を含め全世界からの登録者数が2550名以上です<br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"→ JavaScriptでウェブページをcrawlingしてプレーデータを収集してDBへ保存<br/>"+
@@ -403,16 +403,16 @@
 	
 	var expwork = [
 					// 0번: aicore
-					["AIプラットフォーム開発チーム",
+					["AIプラットフォーム開発",
 					"[期間] 2015年5月~2016年8月<br/><br/>"+
 					"[チーム規模] 5人<br/><br/>"+
 					"[業務内容]<br/>"+
-					"(1) Natural Language Processing/Generationエンジン開発<br/>"+
+					"(1) Natural Language Generationエンジンを引き継ぎ開発<br/>"+
 					"- Java/Jena, Stanford NLP<br/><br/>"+
 					"(2) チャットボット開発<br/>"+
 					"- Java, Tomcat 8<br/>"+
 					"- (1)の技術を適用しクライアントとサーバーが会話できるサービスを制作<br/>"+
-					"-- 別のサーバーを利用し、会社ホムページ内で略1年間サービス<br/><br/>"+
+					"- 別のサーバーを利用し、会社ホムページ内で略1年間サービス<br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"1)  Tomcat上でNatural Language Processingエンジンを統合<br/>"+
 					"2) HTMLからAJAXを使いURLを通じてサーバーと通信<br/>"+
@@ -465,12 +465,27 @@
 			htmltxt += "<a target='_blank' href='img/"+type+"-"+num+"-"+i+".jpg'><img src='img/"+type+"-"+num+"-"+i+".jpg' style='max-width: 200px' /></a>";
 		}
 		
-		var dlg = $("<div title='"+exp[num][0]+"'></div>").css({"overflow-y":"auto"}).html(htmltxt).dialog({
+		var dlgdiv = $("<div style='width:80%' title='"+exp[num][0]+"'></div>");
+		var dlg = dlgdiv.css({"overflow-y":"auto", "float":"left"}).html(htmltxt).dialog({
 			width:'80%',
 			maxHeight: window.innerHeight - 15,
 			overflow:'scroll',
-			resizable:false
+			resizable:false,
+			modal: true,
+			open: function() {
+			$('.ui-widget-overlay').off('click');
+			$('.ui-widget-overlay').on('click', function() {
+					dlgdiv.dialog('close');
+				})
+			}
 		});
+		
+		$(window).scroll(function () {
+			 //after window scroll fire it will add define pixel added to that element.
+			 set = $(document).scrollTop() + "px";
+			 //this is the jQuery animate function to fixed the div position after scrolling.
+			 $('.ui-dialog').animate({ top: set }, { duration: 0, queue: false });
+		 });
 	}
 	</script>
 

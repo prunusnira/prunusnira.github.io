@@ -407,7 +407,7 @@
 					"[기간] 2015년 5월~2016년 8월<br/><br/>"+
 					"[팀 규모] 5명<br/><br/>"+
 					"[업무내용]<br/>"+
-					"(1) Natural Language Processing/Generation 엔진 개발<br/>"+
+					"(1) Natural Language Generation 엔진을 이어받아 개발<br/>"+
 					"- Java/Jena, Stanford NLP<br/><br/>"+
 					"(2) ChatBot 개발<br/>"+
 					"- Java, Tomcat 8<br/>"+
@@ -465,12 +465,27 @@
 			htmltxt += "<a target='_blank' href='img/"+type+"-"+num+"-"+i+".jpg'><img src='img/"+type+"-"+num+"-"+i+".jpg' style='max-width: 200px' /></a>";
 		}
 		
-		var dlg = $("<div title='"+exp[num][0]+"'></div>").css({"overflow-y":"auto"}).html(htmltxt).dialog({
+		var dlgdiv = $("<div style='width:80%' title='"+exp[num][0]+"'></div>");
+		var dlg = dlgdiv.css({"overflow-y":"auto", "float":"left"}).html(htmltxt).dialog({
 			width:'80%',
 			maxHeight: window.innerHeight - 15,
 			overflow:'scroll',
-			resizable:false
+			resizable:false,
+			modal: true,
+			open: function() {
+			$('.ui-widget-overlay').off('click');
+			$('.ui-widget-overlay').on('click', function() {
+					dlgdiv.dialog('close');
+				})
+			}
 		});
+		
+		$(window).scroll(function () {
+			 //after window scroll fire it will add define pixel added to that element.
+			 set = $(document).scrollTop() + "px";
+			 //this is the jQuery animate function to fixed the div position after scrolling.
+			 $('.ui-dialog').animate({ top: set }, { duration: 0, queue: false });
+		 });
 	}
 	</script>
 
