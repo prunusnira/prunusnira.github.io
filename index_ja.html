@@ -66,7 +66,7 @@
         <h3 class="mb-5">
           <em>開発の記録や経験を集めました。</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio1">いきなりですが、開発プロジェクトの紹介から始めます。</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio1">早速ですが、開発プロジェクトの紹介から始めます。</a>
       </div>
       <div class="overlay"></div>
     </header>
@@ -88,8 +88,8 @@
 				<a class="portfolio-item" href="javascript:void(0);" onclick="openExplain(0, 0);">
 				  <span class="caption">
 					<span class="caption-content" style="font-size:125%; color:white; background-color:black;">
-					  <h2>AIプラットフォーム<br/>2015/5~2016/8<br/>Java</h2>
-					  <p class="mb-0">言葉が通じるAIを作る為の自然言語処理プロジェクトに参加</p>
+					  <h2>AIプラットフォーム(AICoRE)<br/>2015/5~2016/8<br/>Java</h2>
+					  <p class="mb-0">言葉を分かるAIを作る為の自然言語処理プロジェクトに参加</p>
 					</span>
 				  </span>
 				  <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
@@ -100,7 +100,7 @@
 				  <span class="caption">
 					<span class="caption-content" style="font-size:125%; color:white; background-color:black;">
 					  <h2>UnityのAI GameとUnity Pluginの開発<br/>2016/8~<br/>Unity3D / C#</h2>
-					  <p class="mb-0">社内のAI技術を利用したゲームとそれを作れるプラグインの開発</p>
+					  <p class="mb-0">社内のAI技術を利用したゲームとAIゲームを作るプラグインの開発</p>
 					</span>
 				  </span>
 				  <img class="img-fluid" src="img/portfolio-6.jpg" alt="">
@@ -335,115 +335,208 @@
 	var expown = [
 					// 0번: ringtone randomizer
 					["Ringtone Randomizer [ Android ]",
-					"- 使用言語：Java<br/>"+
-					"- 2011年~2012年開発、2015年にリニューアル<br/>"+
+					"- 2011年~2012年開発、2015年までアップデート<br/><br/>"+
+					// image 1 (ppt 9)
+					"<a target='_blank' href='img/2-0-3.jpg'><img src='img/2-0-3.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語：Java<br/>"+
 					"- 13400ダウンロード＆3.85評点<br/>"+
 					"- 着信状態によるシステム変更をチェックし着信音をランダム更新<br/><br/>"+
+					// image 2
+					"<a target='_blank' href='img/2-0-0.jpg'><img src='img/2-0-0.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 3
+					"<a target='_blank' href='img/2-0-1.jpg'><img src='img/2-0-1.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 4
+					"<a target='_blank' href='img/2-0-2.jpg'><img src='img/2-0-2.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"→ TelephonyManagerで着信状態を確認<br/>"+
 					"→ ContentValuesを使いシステム設定を更新することで着信音を変更<br/>"+
 					"→ SQLiteを利用して登録済みの着信音を管理<br/>"+
-					"<a href='https://play.google.com/store/apps/details?id=com.ring.roxyeris' style='color:blue'>Google Play Store Link</a>", 3],
+					"<a href='https://play.google.com/store/apps/details?id=com.ring.roxyeris' style='color:blue'>Google Play Store Link</a>"],
 					// 1번: drawing launcher
 					["Drawing Launcher [ Android ]",
-					"- 使用言語：Java/Kotlin（部分的）<br/>"+
 					"- 2016.08~2017.04開発<br/>"+
-					"- 略300ダウンロード＆4.6評点<br/>"+
+					// image 1 (ppt 10)
+					"<a target='_blank' href='img/2-1-3.jpg'><img src='img/2-1-3.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語：Java/Kotlin (部分的)<br/>"+
+					"- 300ダウンロード＆4.6評点<br/>"+
 					"- タッチ＆ドローインでアプリや携帯の機能を実行するホームアプリ<br/><br/>"+
+					// image 2
+					"<a target='_blank' href='img/2-1-0.jpg'><img src='img/2-1-0.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 3
+					"<a target='_blank' href='img/2-1-1.jpg'><img src='img/2-1-1.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 4
+					"<a target='_blank' href='img/2-1-2.jpg'><img src='img/2-1-2.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
-					"→ APIから提供されるGesture, GestureOverlayViewなどを使うことで画面から入力されたジェスチャーを獲得<br/>"+
+					"→ AndroidのAPIから提供されるGesture, GestureOverlayViewなどを使うことで画面から入力されたジェスチャーを獲得<br/>"+
 					"→ Gestureはファイルでローカルに保存されるので別のDBは使用しない<br/>"+
 					"→ GridLayoutを使ったアプリのアイコンを表示<br/>"+
-					"<a href='https://play.google.com/store/apps/details?id=com.roxyeris.drawinglauncher' style='color:blue'>Google Play Store Link</a>", 3],
+					"<a href='https://play.google.com/store/apps/details?id=com.roxyeris.drawinglauncher' style='color:blue'>Google Play Store Link</a>"],
 					// 2번: gitadora info
 					["GITADORA Info [ Web & Android ]",
-					"- チーム規模：2人→1人<br/>"+
-					"- 使用言語・プラットフォーム：Java/JavaScript/HTML/HTML5/Spring Framework<br/>"+
-					"- 2016年1月~4月開発（ウェブ）Android版ビューアーも開発済み<br/>"+
-					"- K社の音楽ゲームGITADORAシリーズの個人記録の管理や公式から提供しない情報を見えるようにサポートするウェブサービス<br/>"+
+					"- 2016年1月~4月開発<br/>"+
+					// image 1 (ppt 11)
+					"<a target='_blank' href='img/2-2-4.jpg'><img src='img/2-2-4.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語・技術：Java/JavaScript/HTML/HTML5/nginx+Tomcat/Spring Framework/MariaDB/jQuery(with bootstrap)<br/>"+
+					"- Android版ビューアーも開発済み<br/>"+
+					"- KONAMIの音楽ゲームGITADORAシリーズの個人記録の管理や公式から提供しない情報を見えるようにサポートするウェブサービス<br/>"+
 					"- 日本と韓国を含め全世界からの登録者数が2550名以上です<br/><br/>"+
+					// image 2
+					"<a target='_blank' href='img/2-2-0.jpg'><img src='img/2-2-0.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 3
+					"<a target='_blank' href='img/2-2-1.jpg'><img src='img/2-2-1.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 4
+					"<a target='_blank' href='img/2-2-2.jpg'><img src='img/2-2-2.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 5
+					"<a target='_blank' href='img/2-2-3.jpg'><img src='img/2-2-3.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"→ JavaScriptでウェブページをcrawlingしてプレーデータを収集してDBへ保存<br/>"+
 					"→ jQueryとBootstrapでデータ表示の為のウェブページを作成<br/>"+
 					"→ nginxとTomcatを連携し、Let's Encryptを使ってSSLを適用<br/>"+
-					"<a href='https://gitadora.info' style='color:blue'>Site Link</a>", 4],
+					"<a href='https://gitadora.info' style='color:blue'>Site Link</a>"],
 					// 3번: BMS
 					["BMS Player(仮) [ PC & Android ]",
-					"- 使用言語・プラットフォーム：Unity3D/C#<br/>"+
 					"- 2017年12月~開発中<br/>"+
+					// image 1 (ppt 12)
+					"<a target='_blank' href='img/2-3-2.jpg'><img src='img/2-3-2.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語：Unity3D/C#<br/>"+
 					"- ターゲット：Windows, Android<br/>"+
-					"- Unity3D基盤の音楽ゲーム<br/>"+
+					"- BMS(Be-Music Script)を使用するUnity3D基盤の音楽ゲーム<br/>"+
+					"- BMSファイルを分析するための構造と処理アルゴリズムの制作<br/>"+
+					"- 音楽のプレイ時間に合わせてノーツの位置を移動<br/>"+
 					"- ポートフォリオ用で始まったものですが、コミュニティからの反応が良くて開発を続けている<br/><br/>"+
+					// image 2
+					"<a target='_blank' href='img/2-3-0.jpg'><img src='img/2-3-0.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 3
+					"<a target='_blank' href='img/2-3-1.jpg'><img src='img/2-3-1.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"→ BMSファイルスペックのよるデータと処理プロセスを構成<br/>"+
 					"→ 曲の再生時間からノーツのタイミングを計算し曲をプレイできるようにする<br/>"+
-					"- サンプル映像：<a href='https://www.youtube.com/watch?v=-WybWAzG10A' style='color:blue'>Sample Video Link</a>", 2],
+					"- サンプル映像：<a href='https://www.youtube.com/watch?v=-WybWAzG10A' style='color:blue'>Sample Video Link</a>"],
 	];
 	
 	var expug = [
 					// 0번: ontology
 					["Ontology基盤の状況認知モバイルフレームワーク",
 					"- 期間: 2013年<br/>"+
-					"- 使用言語・プラットフォーム: Java, Jena, Android<br/>"+
+					"- チーム規模: 1人<br/><br/>"+
+					// image 1 (ppt 7)
+					"<a target='_blank' href='img/1-0-2.jpg'><img src='img/1-0-2.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 2 (ppt 7)
+					"<a target='_blank' href='img/1-0-3.jpg'><img src='img/1-0-3.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語・プラットフォーム: Java, Jena, Android<br/>"+
+					"- モバイル環境から使用者の現在条件に合わせてコンテンツを提供するフレームワーク<br/>"+
 					"- 証明サポートとしてAndroidアプリの制作やフレームワークの修正などの作業を担当<br/>"+
-					"- SCI-E級論文の第2作者として参加<br/><br/>"+
+					"- SCI-E級論文の第2作者として参加<br/>"+
+					"* Mobile situation-aware framework for developing smart mobile software, Joonseok Park, Taejun Kang, Keunhyuk Yeom, Journal of Software: Evolution and Process, Vol. 26, Issue 12, 1 Dec 2014<br/><br/>"+
+					// image 3
+					"<a target='_blank' href='img/1-0-0.jpg'><img src='img/1-0-0.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 4
+					"<a target='_blank' href='img/1-0-1.jpg'><img src='img/1-0-1.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"→ Android: デバイスのセンサーから収集した情報を利用して適当な音楽を流してくれる音楽プレーヤーを作成<br/>"+
 					"→ Java: Swing基盤に作られたプロジェクトの修正及び機能追加などの改善<br/>"+
-					"→ SPARQLを使ってJenaから処理できるQueryの作成と研究"
-					, 2],
+					"→ SPARQLを使ってJenaから処理できるQueryの作成と研究"],
 					// 1번: big data
 					["Big Dataサービス集合フレームワーク",
 					"- 期間: 2013~2014年<br/>"+
+					"- チーム規模: 3人<br/><br/>"+
+					// image 1 (ppt 8)
+					"<a target='_blank' href='img/1-1-1.jpg'><img src='img/1-1-1.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"- Big Dataの使い方を収集、処理、表現に別れこのサービスたちを合わせて一つのシステムに組み立てるフレームワーク<br/>"+
-					"- 3人のチームが外注として参加<br/><br/>"+
+					"- 韓国の釜山市役所の交通課からの外注<br/><br/>"+
+					// image 2
+					"<a target='_blank' href='img/1-1-0.jpg'><img src='img/1-1-0.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
-					"→ PHPでフロントエンドの一部を担当", 1]
+					"→ PHPでフロントエンドの一部(ダイアログUI)を担当<br/>"+
+					"→ jQueryを主に利用"]
 	];
 	
 	var expwork = [
 					// 0번: aicore
-					["AIプラットフォーム開発",
+					["AIプラットフォーム(AICoRE)開発",
 					"[期間] 2015年5月~2016年8月<br/><br/>"+
 					"[チーム規模] 5人<br/><br/>"+
 					"[業務内容]<br/>"+
-					"(1) Natural Language Generationエンジンを引き継ぎ開発<br/>"+
-					"- Java/Jena, Stanford NLP<br/><br/>"+
+					"(1) Natural Language Generationエンジン & Inter-Agent Communication開発<br/>"+
+					"- 構成<br/>"+
+					// image 1 (ppt 1)
+					"<a target='_blank' href='img/0-0-2.jpg'><img src='img/0-0-2.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語・技術: Java, JADE Framework<br/>"+
+					"- 自然言語で会話が可能になるプラットフォームで言語生成とエージェントの間の通信モジュールを開発<br/><br/>"+
+					// image 2
+					"<a target='_blank' href='img/0-0-0.jpg'><img src='img/0-0-0.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 開発詳細<br/>"+
+					"1) NLG<br/>"+
+					"→ Plannerからの入力を受ける<br/>"+
+					"(Input = 文章の構成情報: 単語、時間、順番)<br/>"+
+					"→ 時間情報抜けの文章生成<br/>"+
+					"→ 動詞の時制変更(e.g. is → was)<br/>"+
+					"→ 完成文章をreturn<br/>"+
+					"2) iAC<br/>"+
+					"→ Plannerからデータの伝送要請を受ける<br/>"+
+					"→ JADE Frameworkを利用してFIPA-ACLメッセージ構造に合わせて通信用メッセージを作成<br/>"+
+					"* JADE Framework: Javaで作られたmulti-agent system開発フレームワーク<br/>"+
+					"http://jade.tilab.com<br/>"+
+					"* ACL: Agent Communication Language<br/><br/>"+
+					// image 3 (ppt 2)
+					"<a target='_blank' href='img/0-0-3.jpg'><img src='img/0-0-3.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"(2) チャットボット開発<br/>"+
-					"- Java, Tomcat 8<br/>"+
+					// image 3 (ppt 3)
+					"<a target='_blank' href='img/0-0-4.jpg'><img src='img/0-0-4.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語・技術: HTML, Java, Tomcat 8<br/>"+
 					"- (1)の技術を適用しクライアントとサーバーが会話できるサービスを制作<br/>"+
-					"- 別のサーバーを利用し、会社ホムページ内で略1年間サービス<br/><br/>"+
+					"- 会社ホームページ内で1年間サービス<br/><br/>"+
+					// image 4
+					"<a target='_blank' href='img/0-0-5.jpg'><img src='img/0-0-5.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"1)  Tomcat上でNatural Language Processingエンジンを統合<br/>"+
 					"2) HTMLからAJAXを使いURLを通じてサーバーと通信<br/>"+
 					"3) 接続情報はクッキーで保存<br/><br/>"+
 					"(3) 関連製品<br/>"+
-					"- 家庭用ロボットTyche（<a href='http://tyche.club/' style='color:blue'>Product Web Page</a>）", 2],
+					"- 家庭用ロボットTyche (<a href='http://tyche.club/' style='color:blue'>Product Web Page</a>)<br/><br/>"+
+					// image 5
+					"<a target='_blank' href='img/0-0-1.jpg'><img src='img/0-0-1.jpg' style='max-width: 200px' /></a><br/><br/>"],
 					// 1번: futurable
 					["Unityゲーム開発及びUnity用のAIプラグイン開発",
 					"[期間] 2016年8月~<br/><br/>"+
 					"[チーム規模] 3人→5人<br/><br/>"+
 					"[業務内容]<br/>"+
 					"(1) Unityゲーム開発<br/>"+
-					"- 使用言語：C#(Client)/Java(Server)<br/>"+
-					"- 会社の保有技術を使いNPCがゲームの環境を確認し、次の動作を決定して動くようにするゲームをサンプルとして開発<br/><br/>"+
+					// image 1 (ppt 4)
+					"<a target='_blank' href='img/0-1-2.jpg'><img src='img/0-1-2.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 2 (ppt 4)
+					"<a target='_blank' href='img/0-1-3.jpg'><img src='img/0-1-3.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語：C#(Client)/Java(Server)<br/>"+
+					"- 会社の保有AI技術を使いNPCがゲームの環境を確認し、次の動作を決定して動くようにするゲームをサンプルとして開発<br/><br/>"+
+					// image 3 (ppt 5)
+					"<a target='_blank' href='img/0-1-4.jpg'><img src='img/0-1-4.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"1) クライアント (C#)<br/>"+
-					"→ サーバーとの通信部分、多数のデバッグなど<br/>"+
+					"→ Googleプレイサビース連携、サーバーとの通信、フロントエンドUI、デバッグ<br/>"+
 					"2) サーバー (Java/Spring Framework)<br/>"+
-					"→ Spring FrameworkからAIプラットフォームの開発に使った技術でNPCの間の会話ができるように支援するサーバーを開発<br/>"+
-					"→ URLでクライアントからの要請を受ける<br/><br/>"+
+					"→ Spring Frameworkから改善したAICoREを使い各ユーザー別の会話内容の保存及び会話システムの運営<br/>"+
+					"→ URLでクライアントからの要請を受ける(HttpRequest)<br/><br/>"+
 					"(2) Unity用のAIプラグイン開発<br/>"+
-					"- 使用言語：C#(Client)/Java(Server)<br/>"+
-					"- 上記のゲームに使っていた技術をベースにUnity開発者が使えるプラグインを制作<br/><br/>"+
+					// image 4 (ppt 6)
+					"<a target='_blank' href='img/0-1-5.jpg'><img src='img/0-1-5.jpg' style='max-width: 200px' /></a><br/><br/>"+
+					"- 言語：C#(Client)/Java(Server)<br/>"+
+					"- 上記のゲームに使っていた技術をベースでUnity開発者が使えるプラグインを制作<br/>"+
+					"- ゲーム開発者がゲーム内の環境、動作の条件などの情報をプラグインに入力し、サーバーからTensorflowを利用して学習<br/>"+
+					"- 学習の結果で取ったProtoBufファイルをゲームに適用<br/>"+
+					"- ProtoBufファイルはC++で作られたDLLから使用<br/>"+
+					"* Tensorflowの動作やC++のDLLは担当パートではない<br/><br/>"+
+					// image 5
+					"<a target='_blank' href='img/0-1-0.jpg'><img src='img/0-1-0.jpg' style='max-width: 200px' /></a>&nbsp;"+
+					// image 6
+					"<a target='_blank' href='img/0-1-1.jpg'><img src='img/0-1-1.jpg' style='max-width: 200px' /></a><br/><br/>"+
 					"<b>- 開発詳細</b><br/>"+
 					"1) クライアント (C#)<br/>"+
-					"→ フロントエンドUIと機能の一部<br/>"+
-					"→ サーバー通信<br/>"+
+					"→ フロントエンドUI、サーバー通信、デバッグ<br/>"+
 					"2) サーバー (Java/Spring Framework)<br/>"+
-					"→ Spring FrameworkからPythonコードを実行する形でTensorflowを利用<br/>"+
-					"→ URLでクライアントからの要請を受ける<br/>"+
-					"→ 多数のクライアントからの要請をQueueで管理", 2],
+					"→ Spring FrameworkからPythonコードを実行する形でTensorflowを提供<br/>"+
+					"→ URLでクライアントからの要請を受ける(HttpRequest)<br/>"+
+					"→ 多数のクライアントからの要請をQueueで管理<br/><br/>"+
+					"* Protocol Buffer: Googleが開発した直列化データ構造(Serialized Data Structure)"],
 					];
 	function openExplain(type, num) {
 		var exp = null;
@@ -459,11 +552,7 @@
 			break;
 		}
 	
-		var htmltxt = exp[num][1]+"<br/><br/>参考イメージ (クリックして大きく見る)<br/>";
-		
-		for(var i = 0; i < exp[num][2]; i++) {
-			htmltxt += "<a target='_blank' href='img/"+type+"-"+num+"-"+i+".jpg'><img src='img/"+type+"-"+num+"-"+i+".jpg' style='max-width: 200px' /></a>";
-		}
+		var htmltxt = "<b><font color='blue'>* イメージはクリックして大きく見えます</font></b><br/><br/>"+exp[num][1];
 		
 		var dlgdiv = $("<div style='width:80%' title='"+exp[num][0]+"'></div>");
 		var dlg = dlgdiv.css({"overflow-y":"auto", "float":"left"}).html(htmltxt).dialog({
