@@ -552,11 +552,7 @@
 			break;
 		}
 	
-		var htmltxt = exp[num][1]+"<br/><br/>참고 이미지 (클릭하면 크게 볼 수 있습니다)<br/>";
-		
-		for(var i = 0; i < exp[num][2]; i++) {
-			htmltxt += "<a target='_blank' href='img/"+type+"-"+num+"-"+i+".jpg'><img src='img/"+type+"-"+num+"-"+i+".jpg' style='max-width: 200px' /></a>";
-		}
+		var htmltxt = "<b><font color='blue'>* 이미지를 클릭하면 크게 볼 수 있습니다</font></b><br/><br/>"+exp[num][1];
 		
 		var dlgdiv = $("<div style='width:80%' title='"+exp[num][0]+"'></div>");
 		var dlg = dlgdiv.css({"overflow-y":"auto", "float":"left"}).html(htmltxt).dialog({
