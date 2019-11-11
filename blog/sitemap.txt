@@ -1,0 +1,12 @@
+
+/404.html
+/about/
+/
+/
+/rss.xml
+/sitemap.txt
+/tags.html
+/assets/main.css
+/feed.xml
+
+/jekyll/update/2019/11/11/welcome-to-jekyll.html
